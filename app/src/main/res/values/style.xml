@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme.AppCompat.Light is not a dialog theme -->
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorAccent">@color/purple_500</item>
+    </style>
+
+</resources>

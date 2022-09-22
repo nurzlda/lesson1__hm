@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:background="@color/purple_500"
+       android:gravity="center">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/регулярность"
+           android:textSize="18sp"
+           android:textColor="@color/white"/>
+
+   </LinearLayout>
+
+    <RadioGroup
+
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+  <RadioButton
+      android:buttonTint="@color/purple_500"
+      android:textColor="@color/purple_500"
+      android:id="@+id/everyDayBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/каждый_день"/>
+
+        <RadioButton
+            android:buttonTint="@color/purple_500"
+            android:textColor="@color/purple_500"
+            android:id="@+id/everyWeekBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/каждую_неделю"/>
+
+        <RadioButton
+            android:buttonTint="@color/purple_500"
+            android:textColor="@color/purple_500"
+            android:id="@+id/everyMonthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/каждый_месяц"/>
+
+        <RadioButton
+            android:buttonTint="@color/purple_500"
+            android:textColor="@color/purple_500"
+            android:id="@+id/everyYearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/каждый_год"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:textColor="@color/purple_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/отменить"
+        android:layout_gravity="end"
+        android:paddingEnd="12dp"
+        android:paddingStart="0dp"
+        android:textSize="20sp" />
+
+</LinearLayout>

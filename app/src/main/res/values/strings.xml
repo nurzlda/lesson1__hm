@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lesson1_month4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="home">Home</string>
+    <string name="task">task</string>
+    <string name="regular">regular</string>
+    <string name="date">date</string>
+    <string name="applyBtn">Принять</string>
+    <string name="регулярность">Регулярность</string>
+    <string name="каждый_день">Каждый день</string>
+    <string name="каждую_неделю">Каждую неделю</string>
+    <string name="каждый_месяц">Каждый месяц</string>
+    <string name="каждый_год">Каждый год</string>
+    <string name="отменить">Отменить</string>
+    <string name="title">title</string>
+</resources>
