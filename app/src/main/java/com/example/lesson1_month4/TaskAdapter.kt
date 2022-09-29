@@ -21,11 +21,12 @@ class TaskAdapter(private val list: ArrayList<TaskModel>) : RecyclerView.Adapter
     }
 
 
-    class TaskViewHolder(val binding: TaskItemBinding) : RecyclerView.ViewHolder(binding.root){
+    class TaskViewHolder(private val binding: TaskItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun onBind(taskModel: TaskModel) {
             binding.tvTitle.text = taskModel.task
             binding.tvDate.text = taskModel.date
             binding.tvRegular.text = taskModel.regular
+
 
         }
 

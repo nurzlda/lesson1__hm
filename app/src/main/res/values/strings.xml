@@ -4,9 +4,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo">TODO</string>
     <string name="home">Home</string>
-    <string name="task">task</string>
-    <string name="regular">regular</string>
-    <string name="date">date</string>
+    <string name="task">Введите значение</string>
+    <string name="regular">Регулярность</string>
+    <string name="date">Дата</string>
     <string name="applyBtn">Принять</string>
     <string name="регулярность">Регулярность</string>
     <string name="каждый_день">Каждый день</string>
@@ -15,4 +15,7 @@
     <string name="каждый_год">Каждый год</string>
     <string name="отменить">Отменить</string>
     <string name="title">title</string>
+    <string name="description">description</string>
+    <string name="next_button">дальше</string>
+    <string name="главное">Главное</string>
 </resources>
