@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/boardFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -15,4 +15,21 @@
         android:name="com.example.lesson1_month4.CreateTaskFragment"
         android:label="fragment_create_task"
         tools:layout="@layout/fragment_create_task" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.lesson1_month4.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_boardFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph.xml"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.lesson1_month4.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

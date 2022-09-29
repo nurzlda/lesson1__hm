@@ -74,6 +74,7 @@ class CreateTaskFragment : BottomSheetDialogFragment() {
         }
 
 
+
     }
 
 
@@ -87,6 +88,7 @@ class CreateTaskFragment : BottomSheetDialogFragment() {
               val bundle = Bundle()
               bundle.putSerializable("model", TaskModel(edtTask.text.toString(),date,regular))
               findNavController().navigate(R.id.homeFragment, bundle)
+              dismiss()
           }
 
           regularBtn.setOnClickListener {
