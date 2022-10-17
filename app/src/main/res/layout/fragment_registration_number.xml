@@ -1,14 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bc_life_track"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".RegistrationNumberFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imVw"
+        android:background="@drawable/bc_registration_number"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-110dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_life_track"/>
+
+        <TextView
+            android:paddingStart="12dp"
+            android:paddingEnd="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/life_track"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            />
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/violet_rectangle"
+        android:padding="12dp"
+        android:id="@+id/numberEdt"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="45dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/number"/>
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="45dp"
+        android:id="@+id/codeEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/violet_rectangle"
+        android:hint="@string/code"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/sendNumberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rectangle_bg"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:text="@string/send_number"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/sendCodeBtn"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/send_code"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

@@ -18,4 +18,10 @@
     <string name="description">description</string>
     <string name="next_button">дальше</string>
     <string name="главное">Главное</string>
+    <string name="registration">зарегистрироваться</string>
+    <string name="code">Введите код</string>
+    <string name="number">Введите номер телефона</string>
+    <string name="life_track">LifeTrack</string>
+    <string name="send_number">отправить номер</string>
+    <string name="send_code">отправить код</string>
 </resources>

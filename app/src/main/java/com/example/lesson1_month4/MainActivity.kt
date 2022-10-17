@@ -3,8 +3,6 @@ package com.example.lesson1_month4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.isVisible
-import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.widget.ViewPager2
 import com.example.lesson1_month4.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

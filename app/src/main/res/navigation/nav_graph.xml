@@ -9,7 +9,13 @@
         android:id="@+id/homeFragment"
         android:name="com.example.lesson1_month4.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/createTaskFragment"
         android:name="com.example.lesson1_month4.CreateTaskFragment"
@@ -31,5 +37,35 @@
         android:id="@+id/profileFragment"
         android:name="com.example.lesson1_month4.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationNumberFragment"
+        android:name="com.example.lesson1_month4.RegistrationNumberFragment"
+        android:label="fragment_registration_number"
+        tools:layout="@layout/fragment_registration_number" >
+        <action
+            android:id="@+id/action_registrationNumberFragment_to_accountRegistrationFragment"
+            app:destination="@id/accountRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startRegistrationFragment"
+        android:name="com.example.lesson1_month4.StartRegistrationFragment"
+        android:label="fragment_start_registration"
+        tools:layout="@layout/fragment_start_registration" />
+    <fragment
+        android:id="@+id/accountRegistrationFragment"
+        android:name="com.example.lesson1_month4.AccountRegistrationFragment"
+        android:label="fragment_account_registration"
+        tools:layout="@layout/fragment_account_registration" />
+    <fragment
+        android:id="@+id/aveFragment"
+        android:name="com.example.lesson1_month4.AveFragment"
+        android:label="fragment_ave"
+        tools:layout="@layout/fragment_ave" />
 </navigation>

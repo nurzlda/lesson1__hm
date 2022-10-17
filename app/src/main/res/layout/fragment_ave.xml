@@ -1,14 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AveFragment">
+    android:background="@drawable/bc_life_track"
+    tools:context=".AveFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:background="@drawable/bc_ave"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-270dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_life_track" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="0dp"
+            android:text="@string/life_track"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Добро пожаловать" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Марк" />
+
+    <TextView
+        android:layout_marginTop="114dp"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Просто делай" />
+
+    <Button
+        android:paddingHorizontal="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_bg"
+        android:backgroundTint="@color/purple_500"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начать!"
+        android:textColor="@color/white"
+        android:textSize="24dp"/>
+
+
+</LinearLayout>

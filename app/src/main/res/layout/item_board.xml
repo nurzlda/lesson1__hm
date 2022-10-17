@@ -7,11 +7,13 @@
 
 
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

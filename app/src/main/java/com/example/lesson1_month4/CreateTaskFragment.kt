@@ -4,36 +4,38 @@ import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.app.Dialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
-import android.widget.RadioGroup
 import androidx.navigation.fragment.findNavController
 import com.example.lesson1_month4.databinding.FragmentCreateTaskBinding
 import com.example.lesson1_month4.databinding.RegularDialogBinding
+import com.example.lesson1_month4.room.TaskModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import java.util.*
-import javax.xml.datatype.DatatypeConstants.MONTHS
 
 
 class CreateTaskFragment : BottomSheetDialogFragment() {
 
     lateinit var binding: FragmentCreateTaskBinding
 
-
     var task = ""
     var date = ""
     var regular = ""
+    var taskModel : TaskModel? = null
+
+    val db = Firebase.firestore
 
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         binding = FragmentCreateTaskBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -41,6 +43,15 @@ class CreateTaskFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initClicker()
+        if (tag == "update"){
+            arguments?.let {
+                taskModel = it.getSerializable("model")as TaskModel
+
+                binding.edtTask.setText(taskModel!!.task)
+                binding.dateBtn.text = taskModel!!.date
+                binding.regularBtn.text = taskModel!!.regular
+            }
+        }
     }
 
     private fun showDialog() {
@@ -72,10 +83,8 @@ class CreateTaskFragment : BottomSheetDialogFragment() {
         binding.cancel.setOnClickListener {
             dialog.dismiss()
         }
-
-
-
     }
+
 
 
 
@@ -85,10 +94,27 @@ class CreateTaskFragment : BottomSheetDialogFragment() {
 
           applyBtn.setOnClickListener {
 
-              val bundle = Bundle()
-              bundle.putSerializable("model", TaskModel(edtTask.text.toString(),date,regular))
-              findNavController().navigate(R.id.homeFragment, bundle)
+              if (tag == "update"){
+                  val model =
+                      TaskModel(
+                          id= taskModel!!.id,
+                          task=edtTask.text.toString(),
+                          date = dateBtn.text.toString(),
+                          regular = regularBtn.text.toString())
+
+                  App.appDataBase.taskDao().update(model)
+              } else {
+                  val model = TaskModel(task=edtTask.text.toString(), date = date, regular = regular)
+                  App.appDataBase.taskDao().insert(model)
+                  db.collection("tasks").add(model).addOnSuccessListener {
+                      Log.e("ololo", "initClicker: success " )
+                  }.addOnFailureListener {
+                      Log.e("ololo", "initClicker: ${it.message}" )
+                  }
+              }
+
               dismiss()
+              findNavController().navigate(R.id.homeFragment)
           }
 
           regularBtn.setOnClickListener {
@@ -109,9 +135,6 @@ class CreateTaskFragment : BottomSheetDialogFragment() {
                   date = dateBtn.text.toString()
 
               }, year, month, day)
-
-
-
               dpd.show()
           }
       }

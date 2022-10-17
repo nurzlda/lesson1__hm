@@ -1,11 +1,9 @@
 package com.example.lesson1_month4
 
-import android.content.Context
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
-import coil.load
 import com.example.lesson1_month4.databinding.ItemBoardBinding
 
 
@@ -35,7 +33,8 @@ class BoardAdapter(
     inner class BoardViewHolder(private val binding:ItemBoardBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(boardModel: BoardModel) {
-            binding.imageView.load(boardModel.image)
+            binding.imageView.imageAssetsFolder = "images";
+            binding.imageView.setAnimation(boardModel.image)
             binding.nxtBtn.text = boardModel.button
             binding.tvDescription.text = boardModel.description
 

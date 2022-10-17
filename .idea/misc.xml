@@ -4,18 +4,28 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/drawable/ic_add.xml" value="0.1215" />
-        <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/drawable/image_view_bc.xml" value="0.1505" />
-        <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/drawable/rectangle_bg.xml" value="0.1505" />
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/drawable/task_item.xml" value="0.1505" />
-        <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/drawable/violet_rectangle.xml" value="0.1505" />
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/fragment_board.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/fragment_create_task.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/item_board.xml" value="0.203125" />
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/regular_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/TechLine/AndroidStudioProjects/Lesson1_month4/app/src/main/res/layout/task_item.xml" value="0.203125" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/drawable/ic_life_track.xml" value="0.1505" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/drawable/rectangle_bg.xml" value="0.1505" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/drawable/violet_rectangle.xml" value="0.1505" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_account_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_ave.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_board.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_create_task.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_regisrtation_number.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_registration_number.xml" value="0.18" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/fragment_start_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/item_board.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/regular_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/TechLine/AndroidStudioProjects/lesson1__hm/app/src/main/res/layout/task_item.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
