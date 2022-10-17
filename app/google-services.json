@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "773354754069",
+    "project_id": "lifetrack-cc459",
+    "storage_bucket": "lifetrack-cc459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773354754069:android:f0364236edeccca6a1be1c",
+        "android_client_info": {
+          "package_name": "com.example.lesson1_month4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773354754069-2ngl45u7ktnikjucn0ilfudlukb18vce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lesson1_month4",
+            "certificate_hash": "b4ddfaf7bc7de1ae36bb95a1a90b39054b938cd0"
+          }
+        },
+        {
+          "client_id": "773354754069-bo1r7kiqhnjtbu386oc1vgbtpcvjqdoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZVjoJh7lfuLeC8S6Aw0RXvi-dzr_obDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773354754069-bo1r7kiqhnjtbu386oc1vgbtpcvjqdoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
